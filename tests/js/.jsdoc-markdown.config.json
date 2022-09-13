@@ -1,0 +1,18 @@
+{
+  "customElements": "tests/js/custom-elements.json",
+  "dir": "tests/js",
+  "srcDir": "tests/js",
+  "excludePaths": [
+    "stories",
+    "story",
+    "internal"
+  ],
+  "excludeKinds": [
+    "custom-element-definition"
+  ],
+  "analyzeFlags": [
+    "--litelement"
+  ],
+  "importRoot": "@innofake/jsdoc-markdown",
+  "outFile": "Utilities.md"
+}

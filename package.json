@@ -1,0 +1,23 @@
+{
+  "name": "@innofake/jsdoc-markdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "jsdoc-markdown": "index.js"
+  },
+  "scripts": {
+    "test": "node index.js --config tests/js/.jsdoc-markdown.config.json && node index.js --config tests/ts/.jsdoc-markdown.config.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+   "dependencies": {
+    "@custom-elements-manifest/analyzer": "^0.6.4",
+    "chalk": "^5.0.1",
+    "command-line-args": "^5.2.1",
+    "@innofake/jsdoc-api-debuggable": "^7.1.1",
+    "jsdoc-parse": "^6.1.0"
+  }
+}

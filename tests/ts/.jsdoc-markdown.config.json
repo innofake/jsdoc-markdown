@@ -1,0 +1,17 @@
+{
+  "customElements": "tests/ts/custom-elements.json",
+  "dir": "tests/ts/dist",
+  "srcDir": "tests/ts",
+  "excludePaths": [
+    "stories",
+    "story",
+    "internal"
+  ],
+  "excludeKinds": [
+    "custom-element-definition"
+  ],
+  "analyzeFlags": [
+    "--litelement"
+  ],
+  "importRoot": "@innofake/jsdoc-markdown"
+}
