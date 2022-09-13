@@ -1,0 +1,11 @@
+{
+    "display": "JSDoc Markdown",
+    "repo": "https://github.com/innofake/jsdoc-markdown",
+    "links": [
+        {
+            "name": "NPM",
+            "icon": "https://avatars.githubusercontent.com/u/6078720",
+            "url": "https://www.npmjs.com/package/@innofake/jsdoc-markdown"
+        }
+    ]
+}

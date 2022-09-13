@@ -1,14 +1,21 @@
 {
   "name": "@innofake/jsdoc-markdown",
   "version": "1.0.0",
-  "description": "",
+  "description": "JSDoc Markdown is a tool that allows generating of markdown documentation based on jsdoc comments.",
   "main": "index.js",
   "type": "module",
   "bin": {
     "jsdoc-markdown": "index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "node index.js --config tests/js/.jsdoc-markdown.config.json && node index.js --config tests/ts/.jsdoc-markdown.config.json"
+    "test": "node index.js --config tests/js/.jsdoc-markdown.config.json && node index.js --config tests/ts/.jsdoc-markdown.config.json",
+    "clean": "npx rimraf docs",
+    "docs:html": "npx -p markdown-styles generate-md --layout github --input README.md --output docs",
+    "docs:rename": "npx renamer --find README --replace index docs/README.html",
+    "docs": "npm run clean && npm run docs:html && npm run docs:rename"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +26,10 @@
     "command-line-args": "^5.2.1",
     "@innofake/jsdoc-api-debuggable": "^7.1.1",
     "jsdoc-parse": "^6.1.0"
+  },
+  "devDependencies": {
+    "markdown-styles": "^3.2.0",
+    "renamer": "^4.0.0",
+    "rimraf": "^3.0.2"
   }
 }
